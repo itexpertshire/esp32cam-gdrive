@@ -1,5 +1,5 @@
-Created Apps Script in Google with below function
-
+# Created Apps Script in Google with below function
+```
 function doPost(e) {
   var data = Utilities.base64Decode(e.parameters.data);
   var filename = Utilities.formatDate(new Date(), "GMT-8", "yyyyMMdd_HHmmss")+".jpg";
@@ -15,8 +15,8 @@ function doPost(e) {
 
   return ContentService.createTextOutput("Completed")
 }
-
-During Deployment, 
+```
+# During Deployment, 
 1. choose web app
 2. Execute As Me
 3. The web app will be authorized to run using your account data. - Anyone
